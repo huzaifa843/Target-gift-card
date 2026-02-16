@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const result = await response.json();
 
             if (result.status === "success") {
-                alert("Gift card use successfully!");
+                alert("Gift card used successfully!");
                 form.reset();
             } else {
                 alert("Something went wrong.");
@@ -106,4 +106,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
 
