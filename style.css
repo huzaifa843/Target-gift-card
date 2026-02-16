@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    background: #cc0000;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 60px;
+}
+
+.top-left span {
+    margin-right: 15px;
+}
+
+.store-btn, .location-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.location-btn:hover{
+     background: #a30000;
+     color: white;
+}
+
+.store-btn:hover {
+    color: white;
+    background: #a30000;
+   
+}
+
+.top-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+.top-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+.top-links a:hover::after {
+    width: 100%;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 25px;
+}
+
+.nav-links a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #cc0000;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.search input {
+    width: 350px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: #cc0000;
+    box-shadow: 0 0 0 3px rgba(204, 0, 0, 0.2);
+}
+
+.account {
+    font-weight: 500;
+}
+
+
+/* my css */
+
+/* ================= ACCOUNT AREA ================= */
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-name {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ================= CART ================= */
+
+.cart {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    width: 26px;
+    height: 26px;
+    fill: #333;
+    transition: 0.3s;
+}
+
+.cart:hover .cart-icon {
+    fill: #cc0000;
+    transform: scale(1.05);
+}
+
+/* Cart Counter Badge */
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #cc0000;
+    color: white;
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+
+
+
+/* ================= MAIN ================= */
+
+.main-wrapper {
+    padding: 60px 0 80px;
+}
+
+.content-container {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* ================= FLOATING INPUT ================= */
+
+.input-group {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 20px 12px 10px 12px;
+    border: 2px solid #ff7a00;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fdf4ec;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    font-size: 14px;
+    color: #ff7a00;
+    transition: 0.2s ease;
+    pointer-events: none;
+}
+
+/* Active State */
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+    background: white;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    background: white;
+    padding: 0 4px;
+}
+
+/* Small Text */
+
+.form-box small {
+    display: block;
+    text-align: left;
+    color: #ff7a00;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* ================= HELP AREA ================= */
+
+.help-area {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.help-area p {
+    max-width: 350px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.help-area img {
+    width: 220px;
+}
+
+/* ================= CHECK BUTTON ================= */
+
+.check-btn {
+    width: 100%;
+    padding: 18px;
+    background: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check-btn:hover {
+    background: #a30000;
+}
+
+/* ================= DIVIDER ================= */
+
+.divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 60px auto 40px;
+    max-width: 800px;
+}
+
+/* ================= SIGNUP ================= */
+
+.signup-section {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.signup-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.signup-form {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-form input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    width: 240px;
+}
+
+.signup-btn {
+    padding: 12px 22px;
+    background: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #a30000;
+}
+
+.privacy-link {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #555;
+}
+
+.privacy-link:hover {
+    color: #cc0000;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .search input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .help-area {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .signup-section {
+        flex-direction: column;
+    }
+
+    .signup-form {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .signup-form input {
+        width: 100%;
+    }
+}

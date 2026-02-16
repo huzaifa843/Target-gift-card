@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Gift Card Balance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     
+
+</head>
+<body>
+
+    <!-- TOP RED BAR -->
+    <div class="top-bar">
+        <div class="top-left">
+            <span class="location-btn">Ship to 28200</span>
+            <span class="store-btn">Select your store</span>
+        </div>
+
+        <div class="top-links">
+            <a href="https://www.target.com/circle">Target Circle™</a>
+            <a href="https://www.target.com/circlecard">Target Circle™ Card</a>
+            <a href="https://www.target.com/l/target-circle-360/-/N-2rguk">Target Circle 360™</a>
+            <a href="https://www.target.com/gift-registry">Registry & Wish List</a>
+            <a href="https://www.target.com/weekly-ad">Weekly Ad</a>
+            <a href="https://www.target.com/store-locator/find-stores">Find Stores</a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://corporate.target.com/getmedia/890f3192-ce35-496a-a3cf-15fc0a8105d0/Target_Bullseye-Logo_Red.jpg?width=620" alt="Target Logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Categories</a>
+            <a href="#">Deals</a>
+            <a href="#">Pickup & delivery</a>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="What can we help you find?">
+        </div>
+
+        <!-- <div class="account">
+            Hi, user
+        </div> -->
+
+        <div class="account">
+    <span class="user-name">Hi, User</span>
+
+       <div class="cart">
+          <!-- <span class="cart-count">2</span> -->
+           <svg viewBox="0 0 24 24" class="cart-icon">
+               <path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44c-.16.28-.25.61-.25.97 0 1.1.9 2 2 2h10v-2h-9.42c-.14 0-.25-.11-.25-.25l.03-.12 1.1-1.98h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49-1.73-1-3.58 6.49h-8.13l-.94-2h10.72v-2h-11.6l-.94-2zm3 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm8 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+           </svg>
+         </div>
+      </div>
+
+    </nav>
+
+    <!-- MAIN -->
+    <section class="main-wrapper">
+        <div class="content-container">
+
+            <h2 class="page-title">Check a gift card balance</h2>
+
+            <form class="form-box" id="giftForm">
+
+                <!-- FLOATING INPUT 1 -->
+                <div class="input-group">
+                    <input type="text" id="cardNumber" placeholder=" " required>
+                    <label>Card number</label>
+                </div>
+                <small>Enter a valid 15-digit gift card number</small>
+
+                <!-- FLOATING INPUT 2 -->
+                <div class="input-group">
+                    <input type="text" id="accessNumber" placeholder=" " required>
+                    <label>Access number</label>
+                </div>
+                <small>Enter a valid 8-digit gift card access number</small>
+
+                <div class="help-area">
+                    <p>
+                        Gently remove the metallic strip on the back of your gift card to reveal both the card and the access numbers.
+                    </p>
+
+                    <img src="https://target.scene7.com/is/image/Target/gift_card_balance_help?wid=220&qlt=85&fmt=webp" alt="Gift Card Help">
+                </div>
+
+                <button type="submit" class="check-btn">Check balance</button>
+
+            </form>
+
+            <div class="divider"></div>
+
+            <!-- SIGNUP -->
+            <div class="signup-section">
+
+                <p class="signup-text">
+                    Get top deals, latest trends, and more.
+                </p>
+
+                <div class="signup-form">
+                    <input type="email" placeholder="Email address">
+                    <button class="signup-btn">Sign up</button>
+                </div>
+
+                <a href="#" class="privacy-link">Privacy policy</a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
